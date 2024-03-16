@@ -54,11 +54,11 @@ export const AboutSection = () => {
                 </div>
                 <div className=" p-4">
                   <h2 className="font-bold p-1 text-lg text-zinc-700 text-center">
-                    👋 Hello, I’m Fernando
+                    👋 Hello, I&apos;m Fernando
                   </h2>
                   <p className="font-normal px-5 text-sm text-zinc-500">
-                    🌍 I'm based in Indonesia
-                    <br /> 🧠 I’m currently learning Go Lang
+                    🌍 I&apos;m based in Indonesia
+                    <br /> 🧠 I&apos;m currently learning Go Lang
                   </p>
                   <div className="flex flex-row justify-center items-center pt-4">
                     <div className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">

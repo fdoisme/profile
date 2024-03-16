@@ -158,7 +158,7 @@ export const people = [
     designation: "Whatsapp",
     reactIcon: (
       <a
-        href="https://github.com/fdoisme"
+        href="https://api.whatsapp.com/send/?phone=6281211375657"
         target="_blank"
         className="w-full h-full flex justify-center items-center bg-gray-700 rounded-full"
       >

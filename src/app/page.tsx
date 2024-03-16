@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <Navbar />
       <div>
         <AboutSection />
