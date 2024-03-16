@@ -10,6 +10,7 @@ export const InfiniteMovingCards = ({
   speed = "fast",
   pauseOnHover = true,
   className,
+  container,
 }: {
   items: {
     name: string;
@@ -19,6 +20,7 @@ export const InfiniteMovingCards = ({
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  container?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -87,24 +89,29 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <div
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[550px] h-[300px] object-cover overflow-hidden"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--green-800), var(--slate-900)",
-            }}
+            className={
+              container ||
+              "w-[350px] max-w-full relative rounded-2xl flex-shrink-0 border-slate-700 px-8 py-6 md:w-[550px] h-[300px] object-cover overflow-hidden"
+            }
+            // style={{
+            //   background:
+            //     "linear-gradient(180deg, var(--green-800), var(--slate-900)",
+            // }}
             key={item.name + idx}
           >
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className={
+                  className ||
+                  "user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                }
               >
                 <Image
                   src={item.data}
                   alt="acak-image"
-                  width={450}
                   height={300}
-                  className="h-full w-full object-cover"
+                  className="object-contain"
                 />
               </div>
             </blockquote>

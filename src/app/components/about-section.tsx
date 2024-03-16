@@ -16,18 +16,15 @@ export const AboutSection = () => {
       <div className="absolute flex flex-row items-center justify-center gap-[5%]">
         <div className="w-[30%] flex flex-col gap-10">
           <p className="text-white font-bold text-[20px] text-justify">
-            Career Shifter with a strong interest in programming, especially in
-            web and mobile application development. Seeing the potential of
-            digitalization during COVID-19 opened my eyes to how the web or
-            mobile apps can change culture and increase efficiency. Realizing
-            that the world of IT has a big influence in moving industry is my
-            motivation to change careers.
+            As a career Shifter with a strong interest in programming,
+            especially in web and mobile application development. Seeing the
+            potential of digitalization during COVID-19 opened my eyes to how
+            the web or mobile apps can change culture and increase efficiency.
+            Realizing that the world of IT has a big influence in moving
+            industry is my motivation to change careers.
           </p>
           <div className="flex justify-center">
             <AnimatedTooltip iniProps={people} />
-            {/* <FaLinkedin size={50} color="white" />
-            <FaGithub size={50} color="white" />
-            <FaWhatsapp size={50} color="white" /> */}
           </div>
         </div>
 

@@ -12,10 +12,15 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
         scroll: {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
